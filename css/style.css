@@ -17,7 +17,7 @@ iframe{
 
 
 footer {
-    background-color: #90daee ;
+    background-color: white ;
     padding: 1rem 0;
     margin-top: auto;
 }
@@ -28,14 +28,25 @@ body {
 }
 
 
-
 .hero-img {
 	text-align: center;
 }
-.hero-img img {
-	width: 70%;
-}
 
 .text-muted{
-	color: white !important;
+	color: black; !important;
+}
+
+.hero-img img {
+  width: 30%; /* Προεπιλογή για μικρές οθόνες (π.χ. κινητά) */
+  max-width: 150px; /* Μπορείς να το προσαρμόσεις όπως θες */
+}
+
+@media (min-width: 768px) {
+  .hero-img img {
+    width: 100%; /* Για μεσαίες οθόνες (≥768px) */
+  }
+}
+
+.row-section{
+	margin-top: 4rem;
 }
